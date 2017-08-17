@@ -7,6 +7,7 @@
         <link rel = 'stylesheet' href = 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'/>
         <!--link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /-->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -15,12 +16,15 @@
         </header>
         <hr id="divider">
         <div class = 'container'>
-            <div class = 'answer-question'>
+            
+            <!--div class = 'answer-question'>
                 <button>Answer question</button>
             </div>
             <div class = 'new-question'>
                 <button>Ask question</button>
-            </div>
+            </div-->
+            
+            
             <div class = 'dropdown'></div>
     <?php
     include "functions/sql.php";

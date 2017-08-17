@@ -30,6 +30,13 @@ header img{
     position: relative;
     top: 40px;
 }
+
+#LIKE {
+    height: 70px;
+    float: right;
+    padding: 10px 10px 10px 10px;
+}
+
 #divider {
     border-color: #f2f5f7;
 }
@@ -100,4 +107,15 @@ header img{
     padding: 2px;
     resize: both;
     width: 400px;*/
+}
+
+.writeButton, .askButton {
+    background: #b3a8f4;
+    color: black;
+    border: 0px solid black;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 60%;
+    border-radius: 5px;
+    margin-top: 10px;
 }
