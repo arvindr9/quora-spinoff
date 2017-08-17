@@ -14,73 +14,12 @@
             <img id = "logo" src = "images/You Logo.png"/>
         </header>
         <hr id="divider">
-    <!--
-    <div class = 'container'>
-        <div class = "question-container">
-        <div class = 'question'>
-            <p>Things I should have learned by now:</p>
-        </div>
-        <div class = 'answer-question'>
-            <button>Answer question</button>
-        </div>
-        <div class = 'new-question'>
-            <button>New question</button>
-        </div>
-        <div class = 'dropdown'></div>
-        </div>
-        <div class = 'answer-container'>
-            <div class = 'answers'>
-                <div class="who"><p>College student, just try'na get by.</p></div>
-                <div class="where">Atlanta, GA</div>
-                <br>
-                <ul class="list">
-                    <li>How to play a musical instrument</li>
-                    <li>Object-oriented programming</li>
-                    <li>Social skills</li>
-                </ul>
-            </div>
-            
-            <div class = 'answers'>
-                <div class="who"><p>Just graduated college, adulting.</p></div>
-                <div class="where">Santa Clara, CA</div>
-                <br>
-                <ul class="list">
-                    <li>Some better social abilties, at least how to fake being outgoing.</li>
-                    <li>How to cook a bowl of spaghetti.</li>
-                    <li>Going to the gym when I'm feeling tired is worth it in the end.</li>
-                </ul>
-            </div>
-            
-            <div class = 'answers'>
-                <div class="who"><p>middle school student</p></div>
-                <div class="where">New York City</div>
-                <br>
-                <ul class="list">
-                    <li>How to do math quickly</li>
-                    <li>Reading quickly</li>
-                    <li>The intention for my actions should not be solely for self-interest but also for the well-being of others.</li>
-                </ul>   
-            </div>
-            
-            <div class = 'answers'>
-                <div class="who"><p>70 yrs old, wondering what internet is all about</p></div>
-                <div class="where">Miami, Florida</div>
-                <br>
-                <ul class="list">
-                    <li>Friends are worth staying up for.</li>
-                    <li>Never look back!</li>
-                    <li>There is something worth it about spending lots of time with someone, even if not talking.</li>
-                </ul>   
-            </div>
-        </div>
-    </div>
-    -->
         <div class = 'container'>
             <div class = 'answer-question'>
                 <button>Answer question</button>
             </div>
             <div class = 'new-question'>
-                <button>New question</button>
+                <button>Ask question</button>
             </div>
             <div class = 'dropdown'></div>
     <?php

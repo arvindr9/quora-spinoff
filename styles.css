@@ -34,7 +34,7 @@ header img{
     border-color: #f2f5f7;
 }
 
-container {
+.container {
     position: relative;
     top: 50px;
 }
