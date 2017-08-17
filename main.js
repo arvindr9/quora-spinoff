@@ -1,5 +1,5 @@
 $(function() {
-    var options = {"width": $(window).width()*.8, "modal": true}
+    var options = {"width": $(window).width()*.8, "height": $(window).height()*.8, "modal": true}
    $(".new-question > button").click(function() {
        console.log("a");
      $("#new-question-dialog").dialog(options);  
@@ -9,15 +9,20 @@ $(function() {
         $("#answer-question-dialog").dialog(options);
     });
     
-    $("#new-question-dialog form, #answer-question-dialog form").submit(function(e) {
+    /*$("#new-question-dialog form, #answer-question-dialog form").submit(function(e) {
         return true;
         e.preventDefault();
         $.post("/api.php", $(this).serialize()).done(function() {
             alert("DONE!!!");
         }).fail(function() {
             alert("FAIL!");
-        })
+        });
         return false;
+    });*/
+    
+    $("#answer-question-dialog form").submit(function(e) {
+       $(this).find("input[name=content]").val($(this).find("#answerContent").html());
+       return true;
     });
     
     

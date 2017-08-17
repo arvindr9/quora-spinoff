@@ -10,10 +10,11 @@
     </head>
     <body>
         <header>
-            
+            <img src = "images/YO.png"/>
+            <img id = "logo" src = "images/You Logo.png"/>
         </header>
         <hr id="divider">
-    
+    <!--
     <div class = 'container'>
         <div class = "question-container">
         <div class = 'question'>
@@ -32,7 +33,7 @@
                 <div class="who"><p>College student, just try'na get by.</p></div>
                 <div class="where">Atlanta, GA</div>
                 <br>
-                <ul>
+                <ul class="list">
                     <li>How to play a musical instrument</li>
                     <li>Object-oriented programming</li>
                     <li>Social skills</li>
@@ -43,7 +44,7 @@
                 <div class="who"><p>Just graduated college, adulting.</p></div>
                 <div class="where">Santa Clara, CA</div>
                 <br>
-                <ul>
+                <ul class="list">
                     <li>Some better social abilties, at least how to fake being outgoing.</li>
                     <li>How to cook a bowl of spaghetti.</li>
                     <li>Going to the gym when I'm feeling tired is worth it in the end.</li>
@@ -54,7 +55,7 @@
                 <div class="who"><p>middle school student</p></div>
                 <div class="where">New York City</div>
                 <br>
-                <ul>
+                <ul class="list">
                     <li>How to do math quickly</li>
                     <li>Reading quickly</li>
                     <li>The intention for my actions should not be solely for self-interest but also for the well-being of others.</li>
@@ -65,7 +66,7 @@
                 <div class="who"><p>70 yrs old, wondering what internet is all about</p></div>
                 <div class="where">Miami, Florida</div>
                 <br>
-                <ul>
+                <ul class="list">
                     <li>Friends are worth staying up for.</li>
                     <li>Never look back!</li>
                     <li>There is something worth it about spending lots of time with someone, even if not talking.</li>
@@ -73,7 +74,7 @@
             </div>
         </div>
     </div>
-    
+    -->
         <div class = 'container'>
             <div class = 'answer-question'>
                 <button>Answer question</button>
@@ -119,7 +120,7 @@
         where answer.postId=$postId";
        // $query = trim(preg_replace('/\s+/', ' ', $query));
         $result = mysqli_query($db, $query);
-         $posts = array();
+        $posts = array();
         if ($result)
           {
               //var_dump($result);
@@ -147,7 +148,7 @@
         $questionId = $_GET["id"];  
     }
     else {
-        $questionId = 1;
+        $questionId = 8;
         echo "<script>(function() {
             var loc = location.href;        
             loc += loc.indexOf(\"?\") === -1 ? \"?\" : \"&\";
@@ -165,19 +166,27 @@
      <form action="api.php" method="post">
          <input type="hidden" name="query" value="newPost">
          Who? <input type="text" name="userWho" required /><br>
-         Where? <input type="text" name="userWhere" required /><br>
-         Title <input type="text" name="title" required /><br>
-         Content <textarea name="content" required></textarea><br>
+         Where? <input type="text" name="userWhere" required /><br><br>
+         Question:<br><input type="text" name="title" required /><br>
+         <!--Content <textarea name="content" required></textarea><br>-->
+         <input type=hidden name="content" value=""><br>
          <input type="Submit">
      </form>
   </div>
-  <div id = 'answer-question-dialog' class = "hidden" title = "Answer">
+  <div id = 'answer-question-dialog' class = "hidden" title = "Answer question">
       <form action="api.php" method="post">
           <input type="hidden" name="postId" value="<?php echo $questionId; ?>">
           <input type="hidden" name="query" value="newComment">
           Who? <input type = "text" name = "userWho" required /><br>
-          Where? <input type = "text" name = "userWhere" required /><br>
-          Answer <textarea name="content" required></textarea><br>
+          Where? <input type = "text" name = "userWhere" required /><br><br>
+          <input type=hidden name=content value="" />
+          Answer:<br>
+          <section id="answerContent" contenteditable="true">
+            <ul>
+                <li></li>
+          </ul>
+
+</section><br>
           <input type = "Submit">
       </form>
   </div>
