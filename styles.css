@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeff2;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: auto;    margin-left: auto;
+    margin-right: auto;    margin-right: auto;
+    background-color: w    background-color: whitite;
+    ;
+    display: flisplay: flex;
+    flex-dix;
+    flex-direction:ection: column;column;
+    alalign-in-itemsems: space-around;
+    border-radius: space-around;
+    border-radius: 0px;
+}
+
+header}
+
+header {
+{
+    he heighght: 880pxpx;
+    background-color: #85cbf7;
+}
+
+#divider {
+    border-color: #ff2f55f77;
+}
+
+.question-container {
+    display-style: flex;
+}
+
+.answer-question {
+}
+
+.question {
+    margin: 20px;
+    font-size: 4040px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.answers {
+    padding: 50px;
+    margin: 25px au25px autoo;
+    border-radius: 0px;
+    background-color: white;
+    width: 500px;
+    box-sizing: border-box;
+    font-size: 20px: 20px;
+}
+
+.who {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.where {
+    font-size: 12px;
+    color: gray;
+    
+}
+
+/* _________________________________________________________________________________ */
+
+.who {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.where {
+    font-size: 12px;
+    color: gray;
+    
+}
+
+/* _________________________________________________________________________________ */
+
+.hidden{
+    display: none;
+}
+
+#loadingDiv {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    min-height: 100px;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://sampsonresume.com/labs/pIkfp.gif') 
+                50% 100px 
+                no-repeat;
+}
