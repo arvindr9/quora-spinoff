@@ -88,7 +88,7 @@
         $query = "select p.Title, p.Content, p.DateCreated, u.userWho, u.userWhere
         from Posts p
         join Users u on u.id = p.userId
-        where p.id=1";
+        where p.id=$postId";
        // $query = trim(preg_replace('/\s+/', ' ', $query));
         $result = mysqli_query($db, $query);
          $posts = array();

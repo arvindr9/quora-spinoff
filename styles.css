@@ -7,28 +7,22 @@
 body {
     background-color: #eaeff2;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: auto;    margin-left: auto;
-    margin-right: auto;    margin-right: auto;
-    background-color: w    background-color: whitite;
-    ;
-    display: flisplay: flex;
-    flex-dix;
-    flex-direction:ection: column;column;
-    alalign-in-itemsems: space-around;
-    border-radius: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
     border-radius: 0px;
 }
 
-header}
-
 header {
-{
-    he heighght: 880pxpx;
+    height: 80px;
     background-color: #85cbf7;
 }
 
 #divider {
-    border-color: #ff2f55f77;
+    border-color: #f2f5f7;
 }
 
 .question-container {
@@ -40,33 +34,24 @@ header {
 
 .question {
     margin: 20px;
-    font-size: 4040px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
 
+/*___________________________________QUESTION ANSWERS_______________________________*/
+
+
+
 .answers {
     padding: 50px;
-    margin: 25px au25px autoo;
+    margin: 25px auto;
     border-radius: 0px;
-    background-color: white;
+    background-color: #eaeff;
     width: 500px;
     box-sizing: border-box;
-    font-size: 20px: 20px;
+    font-size: 20px;
 }
-
-.who {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.where {
-    font-size: 12px;
-    color: gray;
-    
-}
-
-/* _________________________________________________________________________________ */
 
 .who {
     font-size: 12px;
